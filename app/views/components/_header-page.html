@@ -10,13 +10,13 @@
     <title>@@title</title>
 
     @@include("./head/_favicons.html")
-    
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
     <link href="{{var_path_env}}css/site.css" rel="stylesheet" />
 </head>
-<body>
+<body @@if(context.bodyCls){class="@@bodyCls"}>
     <div class="wrapper-page">
-        <header class="header-page">
-            <div class="container d-flex align-items-center justify-content-center">
-                @@include('./ui/_brand-logo.html')
-            </div>
-        </header>

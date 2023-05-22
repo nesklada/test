@@ -1,10 +1,30 @@
-﻿$main-font: 'Open Sans', sans-serif;
-$second-font: $main-font;
+﻿$main-font: 'Lato' ,sans-serif;
+$second-font: $main-font;    
 
 $light: 300;
 $regular: 400;
 $semi-bold: 600;
 $bold: 700;
+
+.h1 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+
+    @media(min-width: $md) {
+        margin-bottom: 20px;
+        font-size: unquote("min(40px, 3.2vw)")
+    }
+}
+
+.h2 {
+    margin-bottom: 50px;
+    font-size: 30px;
+
+    @media(min-width: $md) {
+        font-size: 40px;
+    }
+}
 
 .text--uppercase {
     text-transform: uppercase;

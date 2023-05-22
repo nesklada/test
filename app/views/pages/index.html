@@ -1,10 +1,48 @@
 @@include('../components/_header-page.html', {
-    "title": "Test page"
+    "title": "Way Out",
+    "bodyCls": "body-bg"
 })
 
 <main class="main-page">
     <div class="entry">
-        
+        <div class="container">
+            <div class="entry-header">
+                @@include('../components/ui/_brand-logo.html')
+
+                <address class="entry-address">
+                    220 W 133rd St, New York, New York(NY), 10030
+                </address>
+            </div>
+
+            <div class="entry-body">
+                <div class="entry-content">
+                    <h1 class="h1">
+                        Find Out How You Can:
+                    </h1>
+                    
+                    <ul class="entry-list">
+                        <li>
+                            Get out of debt within 12 to 48 months
+                        </li>
+                        <li>
+                            Save Up to Hundreds of Dollars a Month
+                        </li>
+                        <li>
+                            Qualify with an Imperfect Credit Score
+                        </li>
+                        <li>
+                            Get Approved Fast and Easy
+                        </li>
+                    </ul>
+                </div>
+
+                @@include('../components/ui/_picture.html', {
+                    "img": "entry-hero",
+                    "ext": "png",
+                    "pictureClass": "entry-hero"
+                })
+            </div>
+        </div>
     </div>
 </main>
 
