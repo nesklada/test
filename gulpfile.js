@@ -188,7 +188,7 @@ const style_prod = (done) => {
         .pipe(
             purgecss({
                 content: ["./*.html"],
-                whitelist: ['webp', 'avif', 'jpng']
+                whitelist: ['webp', 'avif', 'jpng', 'animated']
             })
         )
         .pipe(cleanCSS({ level: { 1: { specialComments: 0 }, 2: {} } }))

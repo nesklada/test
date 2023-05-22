@@ -9,6 +9,9 @@
     border: 1px solid #2bb5b3;
     outline-color: #359acd;
     z-index: 1;
+    background: transparent;
+    box-shadow: none;
+    min-height: 52px;
 
     &-label {
         position: absolute;

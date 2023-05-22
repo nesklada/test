@@ -6,7 +6,7 @@
 <main class="main-page">
     <div class="entry">
         <div class="container">
-            <div class="entry-header">
+            <div class="entry-header js_animate animate__fadeInRight">
                 @@include('../components/ui/_brand-logo.html')
 
                 <address class="entry-address">
@@ -15,7 +15,7 @@
             </div>
 
             <div class="entry-body">
-                <div class="entry-content">
+                <div class="entry-content js_animate animate__fadeInLeft">
                     <h1 class="h1 text--uppercase">
                         Find Out How You Can:
                     </h1>
@@ -36,17 +36,18 @@
                     </ul>
                 </div>
 
-                @@include('../components/ui/_picture.html', {
-                    "img": "entry-hero",
-                    "ext": "png",
-                    "pictureClass": "entry-hero"
-                })
+                <div class="entry-hero js_animate animate__fadeInRight">
+                    @@include('../components/ui/_picture.html', {
+                        "img": "entry-hero",
+                        "ext": "png"
+                    })
+                </div>
             </div>
         </div>
     </div>
 
     <div class="section">
-        <div class="container">
+        <div class="container js_animate animate__fadeInUp" data-wow-delay="0.5s">
             @@include('../components/_formQuiz.html')
         </div>
     </div>
@@ -54,18 +55,20 @@
     <section class="section">
         <div class="container">
             <div class="schema">
-                <h2 class="h2">
+                <i class="schema-decor js_animate animate__fadeInDown" data-wow-offset="100"></i>
+
+                <h2 class="h2 js_animate animate__fadeInUp" data-wow-offset="100">
                     Steps to Take
                 </h2>
     
                 <ul class="schema-list list">
-                    <li>Evaluate your financial situation: determine the amount and type of debt you owe.</li>
-                    <li>Research options: consider debt settlement: debt consolidation, and bankruptcy as debt relief options.</li>
-                    <li>Consider cost: find a program that fits your budget by comparing fees and charges.</li>
-                    <li>Check credibility: verify your debt relief company's credibility and reputation.</li>
-                    <li>Understand the fine print: read the terms and conditions of each program carefully.</li>
-                    <li>Get professional advice: talk to a financial advisor or attorney about debt relief programs.</li>
-                    <li>Make a decision: select the debt relief program that meets your financial needs.</li>
+                    <li class="js_animate animate__fadeInUp" data-wow-offset="100">Evaluate your financial situation: determine the amount and type of debt you owe.</li>
+                    <li class="js_animate animate__fadeInUp" data-wow-offset="100">Research options: consider debt settlement: debt consolidation, and bankruptcy as debt relief options.</li>
+                    <li class="js_animate animate__fadeInUp" data-wow-offset="100">Consider cost: find a program that fits your budget by comparing fees and charges.</li>
+                    <li class="js_animate animate__fadeInUp" data-wow-offset="100">Check credibility: verify your debt relief company's credibility and reputation.</li>
+                    <li class="js_animate animate__fadeInUp" data-wow-offset="100">Understand the fine print: read the terms and conditions of each program carefully.</li>
+                    <li class="js_animate animate__fadeInUp" data-wow-offset="100">Get professional advice: talk to a financial advisor or attorney about debt relief programs.</li>
+                    <li class="js_animate animate__fadeInUp" data-wow-offset="100">Make a decision: select the debt relief program that meets your financial needs.</li>
                 </ul>
             </div>
         </div>
@@ -74,7 +77,7 @@
     <section class="section">
         <div class="container">
             <div class="cta-grid">
-                <div class="cta-content">
+                <div class="cta-content js_animate animate__fadeInRight" data-wow-offset="50">
                     <h2 class="h3 text--uppercase">
                         Call Us Now
                     </h2>
@@ -86,17 +89,18 @@
                     <a class="cta-glink" tabindex="-1" href="tel:+18666050702">+18666050702</a>
                 </div>
 
-                @@include('../components/ui/_picture.html', {
-                    "img": "cta-hero",
-                    "ext": "png",
-                    "pictureClass": "cta-hero"
-                })
+                <div class="cta-hero js_animate animate__fadeInLeft" data-wow-offset="200">    
+                    @@include('../components/ui/_picture.html', {
+                        "img": "cta-hero",
+                        "ext": "png",
+                    })
+                </div>
             </div>
         </div>
     </section>
 
     <div class="container">
-        <div class="review">
+        <div class="review js_animate animate__fadeInUp" data-wow-offset="150">
             <div class="review-content">
                 <p>
                     "I had a fantastic experience with 'Way Out'. They were very helpful in guiding me through the process of consolidating
@@ -110,7 +114,7 @@
                 "pictureClass": "review-photo"
             })
         </div>
-        <div class="review">
+        <div class="review js_animate animate__fadeInUp" data-wow-offset="150">
             <div class="review-content">
                 <p>
                     "I was skeptical about using a debt relief website, but I was happily surprised by the level of support I received. The
@@ -124,7 +128,7 @@
                 "pictureClass": "review-photo"
             })
         </div>
-        <div class="review">
+        <div class="review js_animate animate__fadeInUp" data-wow-offset="150">
             <div class="review-content">
                 <p>
                     "Way Out was a lifesaver for me. I was struggling to make ends meet with my high monthly debt payments, but with their
@@ -140,7 +144,7 @@
         </div>
     </div>
 
-    <div class="section">
+    <div class="section js_animate animate__fadeInUp" data-wow-offset="150">
         <div class="container">
             @@include('../components/_formSMS.html')
         </div>

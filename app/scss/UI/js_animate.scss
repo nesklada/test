@@ -1,0 +1,12 @@
+.js_animate {
+    visibility: hidden;
+
+    @media(max-width: $smaller-then-md) {
+        animation-delay: .1s !important
+    }
+
+    @media print,
+    (prefers-reduced-motion: reduce) {
+        visibility: visible;
+    }
+}
