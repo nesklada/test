@@ -1446,9 +1446,9 @@ input.error, select.error { background-color: rgba(255, 0, 0, 0.15); border-colo
 
 .field-holder { position: relative; }
 
-.field { padding: 20px 10px 10px; width: 100%; border-radius: 10px; border: 1px solid #2bb5b3; outline-color: #359acd; }
+.field { padding: 20px 10px 10px; width: 100%; border-radius: 10px; border: 1px solid #2bb5b3; outline-color: #359acd; z-index: 1; }
 
-.field-label { position: absolute; top: 2px; left: 10px; text-transform: uppercase; font-size: 10px; font-weight: 900; }
+.field-label { position: absolute; top: 2px; left: 10px; text-transform: uppercase; font-size: 10px; font-weight: 900; z-index: 2; }
 
 /* purgecss end ignore */
 .h1 { margin-bottom: 15px; font-size: 18px; }

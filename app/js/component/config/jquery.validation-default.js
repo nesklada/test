@@ -77,6 +77,10 @@ export default function () {
 
             state: {
                 required: true
+            },
+
+            optCheck0: {
+                required: true
             }
         },
         messages: {
