@@ -238,16 +238,18 @@ const js_prod = (done) => {
 
 const webpImages = () => {
     return src([`./img/**/**.{jpg,jpeg,png}`])
-            .pipe(webp({
-                quality: 90
-            }))
-            .pipe(dest('./webp'))
+        .pipe(webp({
+            quality: 100
+        }))
+        .pipe(dest('./webp'))
 };
 
 const avifImages = () => {
     return src([`./img/**/**.{jpg,jpeg,png}`])
-      .pipe(avif())
-      .pipe(dest('./avif'))
+        .pipe(avif({
+            quality: 100
+        }))
+        .pipe(dest('./avif'))
 };
 
 const clean_webp = (done) => {

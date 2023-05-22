@@ -1,0 +1,72 @@
+$wizard-color: #359acd;
+
+.wizard-holder {
+    margin: 0 auto;
+    max-width: 650px;
+}
+
+.wizard {
+    display: none;
+    flex-direction: column;
+    background: #fff;
+    border: 2px solid $wizard-color;
+    border-radius: 10px;
+    color: #333;
+    overflow: hidden;
+
+    &.is-active {
+        display: flex;
+        opacity: 0;
+        animation: wizardShow 0.4s linear 0s forwards;;
+    }
+
+    &.disabled-animation {
+        animation: none;
+        opacity: 1;
+    }
+
+    &-header {
+        padding: 20px;
+        font-size: 16px;
+        font-weight: 700;
+        color: #fff;
+        background: $wizard-color;
+
+        @media(min-width: $md) {
+            font-size: 18px;
+        }
+    }
+
+    &-fields {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        @media(min-width: $sm) {
+            flex-direction: row;
+        }
+    }
+
+    &-body {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@keyframes wizardShow {
+    from {
+        opacity: 0;
+        transform: translateX(40px);
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

@@ -15,16 +15,11 @@ label.error {
     }
 }
 
-.form-group:not(.has-error) {
-
-    label.error {
-        display: none !important;
-    }
-}
-
-input.error:focus {
-
-    ~ label.error {
-        display: none !important;
+input, 
+select {
+    
+    &.error {
+        background-color: rgba($color-danger, 0.15);
+        border-color: $color-danger;
     }
 }

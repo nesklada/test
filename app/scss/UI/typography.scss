@@ -9,7 +9,6 @@ $bold: 700;
 .h1 {
     margin-bottom: 15px;
     font-size: 18px;
-    text-transform: uppercase;
 
     @media(min-width: $md) {
         margin-bottom: 20px;
@@ -23,6 +22,18 @@ $bold: 700;
 
     @media(min-width: $md) {
         font-size: 40px;
+    }
+}
+
+.h3 {
+    font-size: 30px;
+
+    @media(min-width: 400px) {
+        font-size: 40px;
+    }
+
+    @media(min-width: $md) {
+        font-size: 50px;
     }
 }
 

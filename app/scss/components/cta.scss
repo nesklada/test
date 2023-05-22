@@ -1,0 +1,67 @@
+.cta {
+
+    &-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+
+        @media(min-width: $md) {
+            gap: 0;
+            flex-direction: row-reverse;
+        }
+    }
+
+    &-content,
+    &-hero {
+        width: 100%;
+    }
+
+    &-content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        transition: 0.25s linear;
+
+        &:hover {
+
+            @media #{$hover-mouse} {
+                filter: drop-shadow(0 0 2px #000)
+            }
+        }
+    }
+
+    &-hero {
+        max-width: 300px;
+
+        @media(min-width: $md) {
+            max-width: 100%;
+        }
+    }
+
+    &-decor {
+        max-width: 200px;
+    }
+
+    &-link {
+        position: relative;
+        color: currentColor;
+        text-decoration: none;
+        font-weight: 700;
+        z-index: 2;
+
+        &:hover {
+            color: currentColor;
+        }
+    }
+
+    &-glink {
+        position: absolute;
+        inset: 0;
+        color: transparent !important;
+        text-indent: -9999px;
+        z-index: 1;
+    }
+}

@@ -1,0 +1,19 @@
+.schema {
+    position: relative;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: -30px;
+        right: 15px;
+        width: 120px;
+        height: 50px;
+        background: url(../../img/lines.svg) no-repeat center /contain;
+
+        @media(min-width: $md) {
+            top: 0;
+            width: 200px;
+            height: 100px;
+        }
+    }
+}

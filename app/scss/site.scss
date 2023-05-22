@@ -1,6 +1,7 @@
 ﻿//Bootstrap:
-@import "../../node_modules/bootstrap-scss/bootstrap-reboot.scss";
-@import "../../node_modules/bootstrap-scss/bootstrap-grid.scss";
+@import "../../node_modules/bootstrap-scss/bootstrap-reboot";
+@import "../../node_modules/bootstrap-scss/bootstrap-grid";
+@import "../../node_modules/bootstrap-scss/forms";
 
 
 //variables:
@@ -11,14 +12,15 @@
 //UI:
 /* purgecss start ignore */
 @import "UI/btn";
-@import "UI/form/form-group";
+@import "UI/form/form-check";
 @import "UI/form/form-control";
 @import "UI/form/form-validation";
-@import "UI/form/control-label";
+@import "UI/form/field";
 /* purgecss end ignore */
 @import "UI/typography";
 @import "UI/brand-logo";
 @import "UI/list";
+@import "UI/wizard";
 
 //Components:
 @import "components/_grid";
@@ -26,8 +28,12 @@
 @import "components/_wrapper-page";
 @import "components/_header-page";
 @import "components/_footer-page";
+@import "components/section";
 @import "components/entry";
 @import "components/schema";
+@import "components/cta";
+@import "components/review";
+@import "components/panel";
 
 /* purgecss start ignore */
 /* purgecss end ignore */

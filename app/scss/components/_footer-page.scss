@@ -1,3 +1,25 @@
 ﻿.footer-page {
-    
+    padding: 30px 0 20px;
+}
+
+.footer-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+
+    &-item {
+        color: currentColor;
+        text-decoration: none;
+
+        &:hover {
+            color: currentColor;
+        }
+    }
+}
+
+.footer-copy {
+    padding-top: 20px;
+    display: block;
+    font-size: 12px;
 }

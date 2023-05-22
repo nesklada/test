@@ -1,7 +1,5 @@
 .entry {
     padding-top: 30px;
-    // background: #fff no-repeat center /cover;
-    // @include bgImage('entry-bg', 'png');
     background: url(../../img/entry-bg.svg) no-repeat center top -75px /cover;
     transition: 0.25s linear;
 
@@ -10,15 +8,16 @@
     }
 
     @media(min-width: $md) {
+        padding-top: 50px;
         background-position: center top -150px;
     }
 
     @media(min-width: $lg) {
-        background-position: center top -200px;
+        background-position: center top -180px;
     }
 
-    @media(min-width: $md) {
-        padding-top: 50px;
+    @media(min-width: 1920px) {
+        background-position: center top 140%;
     }
 
     &-header {
@@ -57,11 +56,6 @@
     }
 
     &-list {
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        list-style-position: inside;
         font-size: 14px;
 
         @media(min-width: 400px) {
@@ -103,6 +97,11 @@
             position: static;
             padding: 0 25px;
             max-width: 550px;
+        }
+
+        @media(min-width: $lg) {
+            padding: 0;
+            max-width: 500px;
         }
     }
 

@@ -1,0 +1,14 @@
+.form-check {
+    position: relative;
+    padding-left: 25px;
+    font-size: 12px;
+    user-select: none;
+    cursor: pointer;
+
+    &-input {
+        top: 0;
+        left: 0;
+        margin: 0;
+        cursor: pointer;
+    }
+}

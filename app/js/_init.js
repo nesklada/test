@@ -1,22 +1,20 @@
 
 import jq_validation_default from './component/config/jquery.validation-default';
 import avifWebpBackground from './component/config/avifWebpBackground';
+import masks from './component/config/masks';
 
-// import lazy_init from './component/lazy';
-import utms_init from './component/utms';
-import form_contact from './component/forms/contact';
-import form_unsubscribe from './component/forms/unsubscribe';
+import js_wizard from './component/forms/js_wizard';
+import form_sms from './component/forms/js_formSMS';
 
 (function ($, window, document) {
-        
-    $(function() {
+
+    $(function () {
         avifWebpBackground();
         jq_validation_default();
-        // lazy_init();
-        utms_init();
+        masks();
 
-        form_contact();
-        form_unsubscribe();
+        js_wizard();
+        form_sms();
 
         $("body").css("opacity", 1);
     });
