@@ -16,17 +16,19 @@ export default function () {
         },
 
         highlight: function (element, errorClass, validClass) {
-            let fieldWrap = $(element).closest(holder);
+            const $element = $(element);
+            const $fieldWrap = $element.closest(holder);
 
-            fieldWrap.addClass(error).removeClass(valid);
-            $(element).addClass(errorClass);
+            $fieldWrap.addClass(error).removeClass(valid);
+            $element.addClass(errorClass);
         },
 
         unhighlight: function (element, errorClass, validClass) {
-            let fieldWrap = $(element).closest(holder);
+            const $element = $(element);
+            const fieldWrap = $element.closest(holder);
 
             fieldWrap.removeClass(error).addClass(valid);
-            $(element).removeClass(errorClass);
+            $element.removeClass(errorClass);
         },
 
         rules: {
@@ -133,3 +135,17 @@ export function cleanupForm($form) {
 
     $form.find('.js_formGroup').removeClass(valid);
 }
+
+export function focusOnError($form) {
+    const $target = $form.find('input.error').eq(0);
+
+    if (!$target.length) return;
+
+    $('html, body').animate({
+        scrollTop: $target.offset().top - 20
+    }, 400, () => {
+        setTimeout(function () {
+            $target.focus();
+        }, 10);
+    });
+} 

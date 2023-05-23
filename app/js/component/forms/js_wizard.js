@@ -1,7 +1,8 @@
-import { cleanupForm } from "../config/jquery.validation-default";
+import { cleanupForm, focusOnError, formFocusOnError } from "../config/jquery.validation-default";
 import { ACTIVE, COMPLETED, LOADING } from "../config/stateClasses";
 
 const target = '.js_wizard';
+const SUCCESS_MESSAGE = 'Thank you for the information! We will send you your options shorty!';
 
 export default function wizard() {
     const $forms = $('.js_formQuiz');
@@ -12,12 +13,16 @@ export default function wizard() {
         const $toggler = $forms.find('[type=submit]');
         const $form = $(this);
 
-        if (!$form.valid()) return;
+        if (!$form.valid()) {
+            focusOnError($form);
+
+            return
+        };
 
         $toggler.addClass(LOADING);
 
         setTimeout(function () {
-            alert('Request submited');
+            alert(SUCCESS_MESSAGE);
 
             cleanupForm($forms);
             $toggler.removeClass(LOADING);
